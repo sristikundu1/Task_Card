@@ -13,7 +13,7 @@ const card = ({ item }) => {
     const [newfiles, setNewFiles] = useState([]);
     
      // show the file number from database 
-     const url = "https://task-server-xi.vercel.app/taskfile"
+     const url = "https://task-backend-ivory.vercel.app/taskfile"
 
      useEffect(() => {
          fetch(url)
@@ -37,7 +37,7 @@ const card = ({ item }) => {
          console.log(uploadFile);
  
  
-         fetch("https://task-server-xi.vercel.app/taskfile", {
+         fetch("https://task-backend-ivory.vercel.app/taskfile", {
              method: 'POST',
              headers: {
                  'content-type': "application/json"
